@@ -1,0 +1,224 @@
+print('Have fun with Python!')
+print(1963 +53)
+
+
+x = 4; y = 0;
+
+if x > 0 and \
+   y <= 1:
+    print ('Done')
+
+print('This is a very very '
+      'very very very '
+      'very very long line')
+
+# this is a single line comment
+print('Comments are useful.')   # I am a comment too
+
+"""
+this is
+a multiline
+comment 
+"""
+
+'''
+I am
+a multiline
+comment too
+'''
+
+
+a = b = c = 7
+d,e,f = 3,8,9
+print(a,b,c,d,e,f)
+
+a = 5
+radius = a + 7
+pi = 3.14
+c = a / b
+z = 5 - 8.3j
+circumference = 2 * pi * radius
+area = pi * radius ** 2
+
+print(area)
+
+
+print('8 / 3 = ', 8 / 3)
+print('8 // 3 = ', 8 // 3)
+
+print(z.real)
+print(z.imag)
+
+s = 'Python 3'
+print (s)
+print(s[2])
+print(len(s))
+lastchar = s[len(s)-1]
+print(lastchar)
+
+favclub = 'SK Brann Bergen 1908'
+print(favclub[3:8])     # 3 included, 8 excluded
+print(favclub[3:])
+print(favclub[:15])     # 15  excluded
+print(favclub[-1])
+print(favclub[-4:])
+print(favclub[:-5])
+
+xx ='0123456789'
+print(xx[3:8])          # 3 included, 8 excluded
+print(xx[-1:])
+print(xx[-10:])
+print(xx[:-9])
+
+newString = s + " is 'easy' to learn."
+print(newString)
+newString_2 = s + ' is "easy" to learn.'
+print(newString_2)
+
+q = 'Boys don\'t cry ;-)'
+print(q)
+
+print('1st line\n\t2nd line\a')
+
+age = 41
+# print('I am ' + age + ' years old.')
+print('I am ' + str(age) + ' years old.')
+
+fname = 'Dimitris'
+lname = 'Papazachariou'
+print('Hello %s %s' % (fname,lname))
+
+oldpath = "C:\temp"
+print(oldpath)
+newpath = r"C:\temp"
+print(newpath)
+newpath_1 = R"C:\temp"
+print(newpath_1)
+
+bigstring = '''I am a
+multiline string'''
+print(bigstring)
+
+
+method_lower = 'Flying Circus'.lower()
+print(method_lower)
+method_upper ='Flying Circus'.upper()
+print(method_upper)
+
+method_count = 'The Holy holy Grail'.count('ly')
+print(method_count)
+
+method_replace = 'One Down, Five to Go'.replace('Five', 'Four')
+print(method_replace)
+
+method_find = 'Life of Brian'.find('of')
+print(method_find)
+
+method_strip = '\t  The Meaning of Life\n   '.strip()
+print(method_strip)
+
+in_operator = 'a' in 'book'
+print(in_operator)
+in_operator_1 = 'o' in 'book'
+print(in_operator_1)
+
+x=10; y=10
+is_operator = x is y
+print(is_operator)
+id_x = id(x)
+id_y = id(y)
+print(id_x, id_y)
+
+str_comp = 'A' == 'A'
+print(str_comp)
+str_comp_1 = 'Spiderman' > 'Spider'
+print(str_comp_1)
+str_comp_2 = 'Spiderman' < 'Spider'
+print(str_comp_2)
+
+chain_conn = 1 < 2 < 3
+print(chain_conn)
+chain_conn_1 = 3 >= 2 < 1
+print(chain_conn_1)
+chain_conn_2 = x <= 10 < x*10 <= 100
+print(chain_conn_2)
+
+type_bool = type(True)
+example_bool = True + 1 + False
+print(type_bool, example_bool)
+
+age = input('How old are you? ')
+name = input("What's your name? ")
+print(name + ', you are really ' + age + ' years old?')
+
+x = int(input('Give X: '))
+y = float(input('Give y: '))
+print(x/y)
+
+PI = 3.141592653589793
+
+print('%f' % PI)
+print('%10.3f' % PI)
+print('%10f' % PI)
+print('%.2f' % PI)
+
+print('%d' % 99)
+print('%4d' % 99)
+print('%-4d' % 99)
+print('%04d' % 99)
+
+print('%10s' % 'Hello World')
+print('%.10s' % 'Hello World')
+print('%15s' % 'Hello World')
+print('%-15s' % 'Hello World')
+
+h = 2.5
+u = 17
+msg = 'The last %.3f sec were %d users online.' % (h*3600, u)
+print(msg)
+
+f1 = '{}, {}, {}'.format('a', 'b', 'c')
+print(f1)
+f1 = '{0}, {1}, {2}'.format('a', 'b', 'c')
+print(f1)
+f1 = 'Cylinder: {height}, {radius}'.format(radius='3', height='5')
+print(f1)
+
+f1 = '{0:02d}/{1:02d}/{2:02d}'.format(12, 7, 69)
+print(f1)
+
+f1 = 'Total with tax: {0:10.2f} Euro'.format(1000 * 1.23)
+print(f1)
+
+f1 = '{1:02d} {month}, {0:02d}'.format(12,1969, month='July')
+print(f1)
+
+f1 = 'dec: {0}, oct: {0:#o}, hex: {0:#X}, bin: {0:b}'.format(44)
+print(f1)
+
+f1 = '{0} {1} or not {0} {1}'.format('to', 'be')
+print(f1)
+
+f1 = '{0:<20s} {1:7.2f}'.format('Total:', 1230)
+print(f1)
+f1 = '{0:>20s} {1:7.2f}'.format('Total:', 1230)
+print(f1)
+f1 = '{0:^20s} {1:7.2f}'.format('Total:', 1230)
+print(f1)
+
+f1 = 'The set is {{{}, {}}}.'.format(3, 5)
+print(f1)
+
+
+x = 3
+y = 7
+x, y = y, x
+print('x=%d, y=%d' %(x,y))
+
+
+import random
+random.seed()
+# r1 = random.randint(0,3)
+r1 = random.sample('000011111222334',2)
+print(r1)
+
