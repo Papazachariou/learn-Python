@@ -1,1 +1,11 @@
+import math
 
+a, b, c = input('Enter the 3 coefficients: ').split()
+
+a = int(a); b = int(b); c = int(c)
+
+d = (b ** 2) - (4 * a * c)
+d = math.sqrt(d)
+
+print('first root is', (-b + d) / (2 * a))
+print('second root is', (-b - d) / (2 * a))
