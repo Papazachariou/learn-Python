@@ -1,0 +1,9 @@
+from datetime import datetime
+
+d = datetime.now()
+print(d)
+
+d = datetime(1963, 7, 20, 5, 30, 58)
+
+print('{:%d/%m/%Y %H:%M:%S}'.format(d))
+print('{:%a %d %b %Y %H:%M}'.format(d))
