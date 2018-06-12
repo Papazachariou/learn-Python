@@ -1,0 +1,13 @@
+# equivalent resistance
+
+r1, r2 = input('Enter resistor values: ').split()
+
+r1 = float(r1); r2 = float(r2)
+
+resistorInSeries = r1 + r2
+resistorInParallel = (r1 * r2) / (r1 + r2)
+
+
+print('The equivalent resistance of resistors in series is %.2f' % resistorInSeries)
+print('The equivalent resistance of resistors in parallel is %.2f' % resistorInParallel)
+
