@@ -1,0 +1,31 @@
+# bitwise operators
+
+x = 3; y = 5
+
+print('{0:04b} & {1:04b} = {2:04b}'.format(x, y, x & y))
+print('{0:04b} | {1:04b} = {2:04b}'.format(x, y, x | y))
+print('{0:04b} ^ {1:04b} = {2:04b}'.format(x, y, x ^ y))
+
+'''
+AND is 1 only if both of its inputs are 1, otherwise it's 0.
+OR is 1 if one or both of its inputs are 1, otherwise it's 0.
+XOR is 1 only if exactly one of its inputs are 1, otherwise it's 0.
+NOT is 1 only if its input is 0, otherwise it's 0.
+
+
+0 is written as "0"
+1 is written as "1"
+2 is written as "10"
+3 is "11"
+4 is "100"
+5 is "101"
+.
+.
+1029 is "10000000101" == 2**10 + 2**2 + 2**0 == 1024 + 4 + 1
+
+
+OUTPUT
+0011 & 0101 = 0001
+0011 | 0101 = 0111
+0011 ^ 0101 = 0110
+'''
