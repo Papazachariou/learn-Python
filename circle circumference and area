@@ -1,0 +1,15 @@
+# circle circumference and area
+
+radius = float(input("Radius = "))
+
+import math
+
+pi = math.pi
+
+c = 2 * pi * radius     # circumference
+
+a = pi * radius ** 2    # area
+
+print('The circumference of the circle is %.2f' % c)
+print('The area of the circle is %.2f' % a)
+
