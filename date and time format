@@ -1,3 +1,5 @@
+# date and time format
+
 from datetime import datetime
 
 d = datetime.now()
@@ -7,3 +9,14 @@ d = datetime(1963, 7, 20, 5, 30, 58)
 
 print('{:%d/%m/%Y %H:%M:%S}'.format(d))
 print('{:%a %d %b %Y %H:%M}'.format(d))
+
+'''
+%d day
+%m month's number
+%Y year (four-digit)
+%H hour (24)
+%M minutes
+%S seconds
+%a name of the day
+%b name of the month
+'''
