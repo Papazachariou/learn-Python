@@ -1,0 +1,14 @@
+# sine and cosine of an angle
+
+import math
+
+degrees = float(input('Enter the degrees of the angle: '))
+
+radians = math.radians(degrees)
+
+sine = round(math.sin(radians), 2)
+
+cosine = round(math.cos(radians), 2)
+
+print('The sine of the angle is ' + str(sine))
+print('The cosine of the angle is ' + str(cosine)) 
