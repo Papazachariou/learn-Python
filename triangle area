@@ -1,0 +1,13 @@
+# triangle area using Heron's formula
+
+import math
+
+s1, s2, s3 = input('Enter the lengths of the triangle sides: ').split()
+
+s1 = float(s1); s2 = float(s2); s3 = float(s3)
+
+sp = (s1 + s2 + s3) / 2    # semiperimeter
+
+triangleArea = math.sqrt(sp * (sp - s1) * (sp - s2) * (sp - s3))
+
+print('The area of the triangle is %.2f' % triangleArea)
