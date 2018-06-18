@@ -1,0 +1,24 @@
+# elif example
+
+total = float(input('Enter total amount: '))
+
+if total >= 100 and total < 200:
+    discount = 0.05
+elif total >= 200 and total < 300:
+    discount = 0.10
+elif total >= 300 and total < 400:
+    discount = 0.15
+elif total >= 400:
+    discount = 0.20
+else:
+    discount = 0.0
+
+if discount > 0:
+    total = total - (discount * total)
+    print('New total is', total)
+    # print('New total is ' + str(total))
+else:
+    print('Sorry, no discount!')
+
+
+
