@@ -1,4 +1,4 @@
-# if else
+# if else example
 
 a = int(input('Give an integer: '))
 b = int(input('and another one: '))
