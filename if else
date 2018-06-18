@@ -13,4 +13,7 @@ else:
         max = b
         min = a
 
-    print(max, 'is bigger than', min)
+    print(max, 'is greater than', min)
+
+    print('%d is greater' % a if a > b else a)
+    # <command1> <if> <expression> <else> <command2>
