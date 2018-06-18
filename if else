@@ -1,0 +1,16 @@
+# if else
+
+a = int(input('Give an integer: '))
+b = int(input('and another one: '))
+
+if a == b:
+    print('Numbers are equal')
+else:
+    if a > b:
+        max = a
+        min = b
+    else:
+        max = b
+        min = a
+
+    print(max, 'is bigger than', min)
