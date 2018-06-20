@@ -1,0 +1,20 @@
+# while else
+
+total = 0
+while total < 5:
+    print('The current value is:', total)
+    total += 1
+else:
+    print('The final value is:', total)
+
+
+'''
+OUTPUT
+
+The current value is: 0
+The current value is: 1
+The current value is: 2
+The current value is: 3
+The current value is: 4
+The final value is: 5
+'''
