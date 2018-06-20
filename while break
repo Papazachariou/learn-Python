@@ -1,0 +1,22 @@
+# while break
+
+print("Press any key, 'q' to quit: ")
+while True:                             # 1 == 1
+    ch = input()
+    if ch == 'q':
+        break
+print('Bye, bye!')
+
+
+'''
+OUTPUT EXAMPLE
+
+Press any key, 'q' to quit: 
+a
+b
+c
+d
+e
+q
+Bye, bye!
+'''
