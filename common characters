@@ -1,0 +1,20 @@
+# common characters in strings
+
+band1 = 'Camel'
+band2 = 'Procol Harum'
+
+count = i = 0
+while i < len(band1):
+    j = 0
+    while j < len(band2):
+        if band1[i] == band2[j]: count += 1
+        j += 1
+    i += 1
+print('They have %d common characters.' % count)
+
+
+'''
+OUTPUT
+
+They have 3 common characters.
+'''
