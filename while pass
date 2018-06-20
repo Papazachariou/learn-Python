@@ -1,0 +1,20 @@
+# while pass
+
+print("Press any key, 'q' to quit: ")
+while input() != 'q':
+    pass
+print('Bye, bye!')
+
+
+'''
+OUTPUT EXAMPLE
+
+Press any key, 'q' to quit: 
+a
+b
+c
+d
+e
+q
+Bye, bye!
+'''
