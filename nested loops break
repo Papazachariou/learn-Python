@@ -1,0 +1,22 @@
+# nested loops break
+
+band1 = 'Yes'
+band2 = 'King Crimson'
+
+done = False
+
+for char1 in band1.upper():      # convert to uppercase
+    if done:
+        break
+    for char2 in band2.upper():
+        if char2 == char1:
+            done = True
+            break
+print ('First common character is', char2)
+
+
+'''
+OUTPUT
+
+First common character is S
+'''
