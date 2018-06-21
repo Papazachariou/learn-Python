@@ -1,0 +1,26 @@
+# four basic arithmetic operations
+
+invalid_op = False
+
+print("Enter two numbers and an operator in "
+      "the format 'number1 operator number2': ")
+
+n1, op, n2 = input('').split()
+n1= float(n1)
+n2 = float(n2)
+
+if op == '*':
+    result = n1 * n2
+elif op == '/':
+    result = n1 / n2
+elif op == '+':
+    result = n1 + n2
+elif op == '-':
+    result = n1 - n2
+else:
+    invalid_op = True
+
+if invalid_op == True:
+    print('Inavalid operator.')
+else:
+    print('%.2f %s %.2f is %.2f' % (n1, op, n2, result))
