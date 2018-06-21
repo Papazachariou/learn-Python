@@ -1,0 +1,15 @@
+# count odd and even numbers
+
+odd = even = 0
+
+print('Enter integers, 0 to quit.')
+
+while True:
+    num = int(input('Give: '))
+    if num == 0:
+        break
+    elif num % 2 == 1:
+        odd += 1
+    elif num % 2 == 0:
+        even += 1
+print('%d odd and %d even numbers entered.' % (odd, even))
