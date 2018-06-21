@@ -1,0 +1,7 @@
+# uppercase letters
+
+while True:
+    ch = input('Enter only uppercase letters: ')
+    if ch not in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        print("That's not an uppercase letter.")
+        break
