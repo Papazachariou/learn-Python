@@ -1,0 +1,13 @@
+# exceptions
+
+try:
+    1/0
+except ZeroDivisionError:
+    print('Wake up! Division by zero!')
+
+
+'''
+OUTPUT
+
+Wake up! Division by zero!
+'''
