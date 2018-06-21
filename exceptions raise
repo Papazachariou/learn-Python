@@ -1,0 +1,10 @@
+# exceptions raise
+
+try:
+    x = float(input('Give a positive number: '))
+    if x <= 0:
+        raise Exception('I said only positive numbers')
+except Exception as ex:
+    print('Error:', ex)
+else:
+    print('%.2f' % (x))
