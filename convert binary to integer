@@ -1,0 +1,8 @@
+# convert binary to integer
+
+data = input('Enter comma-separated binaries: ')
+
+for b in data.split(','):
+    number = int(b, 2)          # base is 2
+    if not number % 5:
+        print(number, end=' ')
