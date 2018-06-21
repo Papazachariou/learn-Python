@@ -1,0 +1,16 @@
+# exceptions finally
+
+try:
+    x = float(input('Give the dividend: '))
+    y = float(input('and the divisor: '))
+    result = x / y
+except ZeroDivisionError:
+    print('Division by zero')
+except (ValueError, TypeError, NameError):
+    print('Invalid data')
+except:
+    print('Trouble')
+else:
+    print('%.2f / %.2f is %.2f' % (x, y, result))
+finally:
+    print('Cleaning up: This is the end.')
