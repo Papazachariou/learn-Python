@@ -1,0 +1,11 @@
+# exceptions else
+
+try:
+    num = int(input('Enter an integer: '))
+    print(num)
+except KeyboardInterrupt:
+    print('\nWhy did you press [Ctrl] + [C]?')
+except:
+    print('An unexpected error occured.')
+else:
+    print('Thanks')
