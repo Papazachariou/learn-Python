@@ -1,0 +1,9 @@
+# squared numbers
+
+num = int(input('Enter a positive integer: '))
+
+if num >= 0:
+    for n in range(num):
+        print('{0:3d} squared is {1:5d}'.format(n, n * n))
+else:
+    print('That\'s not a positive integer.')
