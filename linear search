@@ -1,0 +1,20 @@
+# linear search character in string
+
+string = input('Enter a string: ')
+ch = input('Enter a character to search: ')
+
+found = False
+
+output = ''             # blank string for output
+
+for x in string:
+    if x == ch:
+        output += ch
+        found = True
+    else:
+        output += '_'
+
+if found:
+    print(output)
+else:
+    print('Character "%s" is not in "%s".' % (ch, string))
