@@ -1,0 +1,23 @@
+# prime numbers
+
+i = 1
+
+print('The prime numbers until 30 are: ')
+
+while i <= 30:
+    c = 0; j = 1
+    while j < i:
+        if i % j == 0:
+            c += 1
+        j += 1
+    if c == 1:
+        print(i, end=' ')
+    i += 1
+
+
+'''
+OUTPUT
+
+The prime numbers until 30 are: 
+2 3 5 7 11 13 17 19 23 29 
+'''
