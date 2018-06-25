@@ -1,0 +1,17 @@
+# guess a number
+
+import random
+
+times = 1
+rnum = random.randint(1, 10)
+#print(rnum)
+
+while times <= 3:
+    num = int(input('Guess a number between 1 and 10: '))
+    if rnum == num:
+        print('Correct!')
+        break
+    print('That\'s not my number.')
+    times += 1
+else:
+    print('Better Luck Next Time ;-')
