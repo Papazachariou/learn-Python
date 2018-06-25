@@ -10,6 +10,7 @@ while i <= 30:
         if i % j == 0:
             c += 1
         j += 1
+        # print(i, j, c)
     if c == 1:
         print(i, end=' ')
     i += 1
