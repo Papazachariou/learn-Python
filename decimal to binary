@@ -1,0 +1,24 @@
+# decimal to binary
+
+binary = ''
+
+try:
+    number = int(input('Enter a number to convert: '))
+    if number < 0:
+        raise Exception('Positive integer please!')
+    elif number == 0:
+        binary = '00000000'
+    else:
+        while number > 0:
+            digit = str(number % 2)                 # 0 or 1
+            binary = digit + binary                 # append digit
+            number = number // 2                    # integral division
+
+    if len(binary) < 8:                             # at least 8 digits
+        for i in range(8 - len(binary)):
+            binary = '0' +binary
+    print('The binary representation is %s' % binary)
+except (ValueError, TypeError, ArithmeticError):
+    print('That\'s not a valid input.')
+except Exception as ex:
+    print(ex)
