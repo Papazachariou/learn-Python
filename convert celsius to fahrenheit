@@ -1,0 +1,13 @@
+# convert Celsius to Fahrenheit and vice versa
+
+temp, symbol = input('Enter the temperature and the symbol of scale: ').split()
+temp = float(temp)
+
+if symbol == 'C':
+    celsius = temp
+    fahrenheit = (((9 / 5) * celsius) + 32)
+    print('%.2f degrees in Celsius are %.2f degrees in Fahrenheit' % (celsius, fahrenheit))
+else:
+    fahrenheit = temp
+    celsius = ((5 / 9) * (fahrenheit - 32))
+    print('%.2f degrees in Fahrenheit are %.2f degrees in Celsius' % (fahrenheit, celsius))
