@@ -1,0 +1,21 @@
+# overflow error exception
+
+try:
+    x = 10.0
+    for i in range(1, 100):
+        x = x ** i
+        print(i, x)
+except OverflowError:
+    print('Overflowed after', x)
+
+
+'''
+OUTPUT
+
+1 10.0
+2 100.0
+3 1000000.0
+4 1e+24
+5 1e+120
+Overflowed after 1e+120
+'''
