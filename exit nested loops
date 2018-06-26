@@ -1,0 +1,19 @@
+# exit nested loops with exception raise
+
+band1 = 'junk food'
+band2 = 'Burger King'
+
+try:
+    for char1 in band1.upper():
+        for char2 in band2.upper():
+            if char2 == char1:
+                raise StopIteration()           # raise exception
+except StopIteration:
+    print('First common character is', char2)
+
+
+'''
+OUTPUT
+
+First common character is U
+'''
