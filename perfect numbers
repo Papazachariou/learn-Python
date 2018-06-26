@@ -1,0 +1,18 @@
+# perfect numbers
+
+num = int(input('Enter the limit for searching perfect numbers: '))
+
+n = 1
+
+while n <= num:
+    sum = 0
+    
+    divisor = 1
+    while divisor < n:
+        if n % divisor == 0:
+          sum += divisor
+        divisor += 1
+        
+    if sum == n:
+        print(n, 'is a perfect number!')
+    n += 1
